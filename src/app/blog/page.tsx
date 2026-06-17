@@ -109,7 +109,7 @@ const articles = [
   },
 ]
 
-const categories = [...new Set(articles.map(a => a.category))]
+const categories = articles.map(a => a.category).filter((c, i, arr) => arr.indexOf(c) === i)
 
 export default function BlogPage() {
   return (
