@@ -2,250 +2,40 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --navy-950: #05080F;
-  --navy-900: #090F1E;
-  --navy-800: #0F1F3D;
-  --navy-700: #162D57;
-  --navy-600: #1E3A6E;
-  --navy-100: #E0E7FF;
-  --navy-50: #EEF2FF;
-  --gold-600: #D97706;
-  --gold-500: #F59E0B;
-  --gold-400: #FBBF24;
-  --gold-300: #FDE68A;
-  --sky-600: #0284C7;
-  --sky-500: #0EA5E9;
-  --sky-400: #38BDF8;
-}
-
 @layer base {
-  html {
-    scroll-behavior: smooth;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-  }
+  html { scroll-behavior: smooth; }
+  
+  ::selection { background: #FBBF24; color: #090F1E; }
 
-  h1, h2, h3 {
-    font-family: var(--font-display), Georgia, serif;
-  }
+  :focus-visible { outline: 2px solid #F59E0B; outline-offset: 2px; }
 
-  ::selection {
-    background: #FBBF24;
-    color: #090F1E;
-  }
-
-  :focus-visible {
-    outline: 2px solid #F59E0B;
-    outline-offset: 2px;
-  }
-}
-
-@layer components {
-  .btn-primary {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.5rem;
-    background-color: #F59E0B;
-    color: #090F1E;
-    font-weight: 600;
-    padding: 0.75rem 1.5rem;
-    border-radius: 0.5rem;
-    transition: all 0.2s;
-    border: none;
-    cursor: pointer;
-    text-decoration: none;
-  }
-  .btn-primary:hover {
-    background-color: #D97706;
-    box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1);
-    transform: translateY(-2px);
-  }
-
-  .btn-secondary {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.5rem;
-    background: transparent;
-    border: 2px solid rgba(255,255,255,0.3);
-    color: white;
-    font-weight: 600;
-    padding: 0.75rem 1.5rem;
-    border-radius: 0.5rem;
-    transition: all 0.2s;
-    cursor: pointer;
-    text-decoration: none;
-  }
-  .btn-secondary:hover {
-    border-color: rgba(255,255,255,0.6);
-  }
-
-  .btn-outline {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.5rem;
-    background: transparent;
-    border: 2px solid #162D57;
-    color: #0F1F3D;
-    font-weight: 600;
-    padding: 0.75rem 1.5rem;
-    border-radius: 0.5rem;
-    transition: all 0.2s;
-    cursor: pointer;
-    text-decoration: none;
-  }
-  .btn-outline:hover {
-    border-color: #090F1E;
-  }
-
-  .section-label {
-    display: inline-block;
-    color: #F59E0B;
-    font-family: var(--font-mono), monospace;
-    font-size: 0.75rem;
-    font-weight: 600;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    margin-bottom: 0.75rem;
-  }
-
-  .section-title {
-    font-family: var(--font-display), Georgia, serif;
-    font-size: clamp(1.875rem, 4vw, 3rem);
-    font-weight: 700;
-    color: #090F1E;
-    line-height: 1.2;
-  }
-
-  .section-subtitle {
-    font-size: 1.125rem;
-    color: rgba(30,58,110,0.7);
-    line-height: 1.7;
-    max-width: 42rem;
-  }
-
-  .card {
-    background: white;
-    border: 1px solid #e2e8f0;
-    border-radius: 1rem;
-    padding: 1.5rem;
-    transition: all 0.2s;
-  }
-  .card:hover {
-    box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1);
-    border-color: #cbd5e1;
-  }
-
-  .card-dark {
-    background: rgba(15,31,61,0.6);
-    border: 1px solid rgba(255,255,255,0.1);
-    border-radius: 1rem;
-    padding: 1.5rem;
-    backdrop-filter: blur(8px);
-  }
-
-  .nav-link {
-    color: #162D57;
-    font-weight: 500;
-    transition: color 0.15s;
-    text-decoration: none;
-  }
-  .nav-link:hover {
-    color: #090F1E;
-  }
-
-  .prose-vc {
-    max-width: none;
-  }
-  .prose-vc h1, .prose-vc h2, .prose-vc h3 {
-    font-family: var(--font-display), Georgia, serif;
-    color: #090F1E;
-  }
-  .prose-vc p {
-    color: #162D57;
-    line-height: 1.75;
-  }
-  .prose-vc a {
-    color: #0284C7;
-    text-decoration: none;
-  }
-  .prose-vc a:hover {
-    text-decoration: underline;
-  }
-  .prose-vc strong {
-    color: #090F1E;
-  }
-  .prose-vc code {
-    color: #162D57;
-    background: #EEF2FF;
-    padding: 0.1rem 0.3rem;
-    border-radius: 0.25rem;
-    font-size: 0.875em;
-  }
-  .prose-vc pre {
-    background: #090F1E;
-    color: #4ade80;
-    border-radius: 0.75rem;
-    padding: 1rem;
-    overflow-x: auto;
-  }
-  .prose-vc ul, .prose-vc ol {
-    color: #162D57;
-    padding-left: 1.5rem;
-  }
-  .prose-vc li {
-    margin-bottom: 0.5rem;
-    line-height: 1.75;
-  }
-  .prose-vc table {
-    width: 100%;
-    border-collapse: collapse;
-    font-size: 0.9em;
-  }
-  .prose-vc th, .prose-vc td {
-    border: 1px solid #e2e8f0;
-    padding: 0.75rem 1rem;
-    text-align: left;
-  }
-  .prose-vc th {
-    background: #EEF2FF;
-    font-weight: 600;
-    color: #090F1E;
+  h1, h2, h3, h4 {
+    font-family: var(--font-display), 'Georgia', serif;
   }
 }
 
 @layer utilities {
   .text-gradient-gold {
-    background: linear-gradient(135deg, #F59E0B 0%, #FBBF24 50%, #FDE68A 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-  }
-
-  .text-gradient-sky {
-    background: linear-gradient(135deg, #0EA5E9 0%, #38BDF8 100%);
+    background: linear-gradient(135deg, #F59E0B 0%, #FBBF24 60%, #FDE68A 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
   }
 
   .bg-hero {
-    background: radial-gradient(ellipse 80% 60% at 50% -10%, rgba(30,58,110,0.15) 0%, transparent 70%),
-                linear-gradient(180deg, #ffffff 0%, #F8FAFF 100%);
+    background: radial-gradient(ellipse 80% 60% at 50% -10%, rgba(30,58,110,0.12) 0%, transparent 70%),
+                linear-gradient(180deg, #ffffff 0%, #f8faff 100%);
   }
 
   .bg-dark-hero {
-    background: radial-gradient(ellipse 80% 80% at 50% -20%, rgba(245,158,11,0.12) 0%, transparent 60%),
+    background: radial-gradient(ellipse 80% 80% at 50% -20%, rgba(245,158,11,0.15) 0%, transparent 60%),
                 linear-gradient(180deg, #090F1E 0%, #0F1F3D 100%);
   }
 
   .grid-bg {
-    background-image: linear-gradient(rgba(30,58,110,0.06) 1px, transparent 1px),
-                      linear-gradient(90deg, rgba(30,58,110,0.06) 1px, transparent 1px);
+    background-image:
+      linear-gradient(rgba(30,58,110,0.06) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(30,58,110,0.06) 1px, transparent 1px);
     background-size: 40px 40px;
-  }
-
-  @media (prefers-reduced-motion: reduce) {
-    * { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
   }
 }
