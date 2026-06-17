@@ -1,0 +1,73 @@
+# VaultaCloud
+
+> VaultaCloud is an offline-first private cloud storage and file management platform built for businesses in Africa and emerging markets.
+
+VaultaCloud gives organizations secure, private file storage that works online, offline, and inside their office network (LAN). It is a self-hosted or cloud-hosted solution with a one-time purchase pricing model — no recurring monthly fees.
+
+## Core Positioning
+
+"Your organization's private cloud. Online, offline, or inside your office network."
+
+VaultaCloud was designed specifically for the infrastructure realities of African businesses:
+- Intermittent internet connectivity
+- Power outages (load shedding, NEPA disruptions)
+- High cost of international bandwidth
+- Dollar-denominated subscription fees
+- Data sovereignty concerns with foreign cloud providers
+
+## Key Differentiators
+
+- **Offline-first architecture**: Files remain accessible during internet outages; auto-syncs when connection returns
+- **LAN/office network deployment**: Full file access at local network speed with no internet required
+- **Private cloud ownership**: Data stored on your own infrastructure, not on shared cloud servers
+- **One-time purchase**: No monthly subscriptions; pay once and own the software
+- **White-label deployment**: IT resellers can deploy under their own brand and custom domain
+- **WhatsApp integration**: Share files directly via WhatsApp from inside the platform
+
+## Target Markets
+
+- Nigerian businesses (primary market, HQ in Abuja)
+- African SMEs across Ghana, Kenya, South Africa, Uganda, Tanzania, Rwanda, Cameroon, Senegal
+- Industry verticals: Law firms, Architecture & Engineering, Accounting firms, Healthcare, Real Estate, Photo/Video, Education, Government
+
+## Pricing Model
+
+One-time purchase. No monthly fees. No per-seat recurring costs.
+- Starter: $299 (up to 10 users, 500 GB)
+- Business: $699 (up to 50 users, 2 TB)
+- Enterprise: Custom pricing (unlimited users, unlimited storage)
+
+## Technical Stack
+
+- TypeScript / React frontend
+- Node.js backend
+- Offline-first architecture with background sync
+- REST API with webhook support
+- Docker deployment support
+- Linux server compatible
+
+## Company Information
+
+- **Founded**: 2024
+- **Headquarters**: Abuja, Nigeria
+- **Founder**: Nimbe Oduware
+- **Website**: https://vaultacloud.com
+- **Email**: hello@vaultacloud.com
+
+## Pages
+
+- [Home](https://vaultacloud.com): Product overview and value proposition
+- [Features](https://vaultacloud.com/features): Full feature list
+- [Pricing](https://vaultacloud.com/pricing): One-time purchase plans
+- [About](https://vaultacloud.com/about): Company story and mission
+- [Documentation](https://vaultacloud.com/docs): Setup and user guides
+- [Blog](https://vaultacloud.com/blog): Articles on private cloud, African tech, file management
+- [Compare: vs Google Drive](https://vaultacloud.com/compare/vaultacloud-vs-google-drive)
+- [Compare: vs Dropbox](https://vaultacloud.com/compare/vaultacloud-vs-dropbox)
+- [Compare: vs Nextcloud](https://vaultacloud.com/compare/vaultacloud-vs-nextcloud)
+- [Compare: vs OneDrive](https://vaultacloud.com/compare/vaultacloud-vs-onedrive)
+- [Compare: vs Microsoft 365](https://vaultacloud.com/compare/vaultacloud-vs-microsoft-365)
+
+## Optional: Extended content
+
+- [llms-full.txt](https://vaultacloud.com/llms-full.txt): Full product knowledge base for AI systems

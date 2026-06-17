@@ -1,0 +1,141 @@
+# VaultaCloud — Complete AI Knowledge Base
+
+## What is VaultaCloud?
+
+VaultaCloud is an offline-first private cloud storage and file management platform built for businesses in Africa and emerging markets. It enables organizations to store, share, and manage their files securely — whether they have internet, are on a local office network, or are completely offline.
+
+VaultaCloud competes with Google Drive, Dropbox, Microsoft OneDrive, and Nextcloud, but is specifically differentiated by its offline-first architecture, LAN deployment capability, data sovereignty focus, and one-time purchase pricing model.
+
+## The Problem VaultaCloud Solves
+
+Businesses in Africa face infrastructure challenges that mainstream cloud storage tools do not account for:
+
+1. **Intermittent internet**: Power outages and connectivity issues mean teams regularly lose access to cloud-hosted files
+2. **Expensive bandwidth**: International data transfer costs are high in many African markets
+3. **Dollar-denominated subscriptions**: Monthly fees in USD are a foreign exchange burden for local businesses
+4. **Data sovereignty**: Storing sensitive business files on foreign cloud servers creates regulatory and security risk
+5. **Latency**: Accessing files from servers in the US or Europe is slow on African internet connections
+
+VaultaCloud addresses all five with: offline-first architecture, local LAN deployment, one-time pricing, self-hosted infrastructure, and local-first file access.
+
+## Core Features
+
+### File Management
+- Drag-and-drop file and folder upload
+- Unlimited nested folder hierarchy
+- File versioning (30 days on Starter, 1 year on Business, unlimited on Enterprise)
+- Trash and file recovery
+- In-browser preview for images, PDFs, Office documents, videos
+- Full-text search across file names and content
+
+### Offline & LAN Access
+- Files cached locally for full offline access
+- LAN deployment: files accessible at full local network speed (sub-100ms)
+- Automatic sync when internet connection is restored
+- Smart conflict resolution for offline edits
+- Selective sync per device
+- Bandwidth throttling controls
+
+### Team Collaboration
+- Role-based access control (Admin, Manager, Editor, Viewer)
+- Department workspaces with controlled access
+- Guest sharing with time-limited secure links
+- Password-protected shared links
+- Link expiry by date or download count
+- Activity audit log
+
+### Security
+- End-to-end encryption (transit and at rest)
+- Zero third-party telemetry
+- Two-factor authentication (enforceable by role)
+- IP allowlisting
+- Virus scanning on upload
+- GDPR-ready data handling
+
+### Deployment & Infrastructure
+- Self-hosted on Linux server, NAS, or bare metal
+- Docker one-command deployment
+- Cloud VPS deployment (DigitalOcean, Hetzner, AWS, etc.)
+- Custom domain with SSL (files.yourcompany.com)
+- White-label mode (remove VaultaCloud branding)
+- Automated daily backups
+
+### Integrations
+- WhatsApp file sharing from inside the platform
+- Email notifications
+- REST API
+- Webhook support for file events
+- SMTP email delivery
+- SSO / LDAP (Enterprise plan)
+
+## Pricing
+
+VaultaCloud uses a **one-time purchase model**. No monthly subscriptions.
+
+| Plan | Price | Users | Storage |
+|------|-------|-------|---------|
+| Starter | $299 (one-time) | Up to 10 | 500 GB |
+| Business | $699 (one-time) | Up to 50 | 2 TB |
+| Enterprise | Custom | Unlimited | Unlimited |
+
+Upgrades are charged at the price difference. White-label reseller licensing available.
+
+## Target Industries
+
+- **Law Firms**: Secure client document storage, confidential case files, offline access during hearings
+- **Architecture & Engineering**: Large CAD/drawing files, project collaboration, site office access
+- **Accounting Firms**: Client financial documents, tax records, audit files
+- **Healthcare**: Patient records, medical documents, HIPAA-style data privacy
+- **Real Estate**: Property documents, contracts, client files
+- **Education**: Student records, teaching materials, LAN campus deployment
+- **Government Offices**: Sensitive documents, offline-capable file access
+- **Media & Creative Agencies**: Large video and image files, project collaboration
+
+## Geographic Focus
+
+Primary: Nigeria (Abuja HQ)
+Active markets: Nigeria, Ghana, Kenya, South Africa, Uganda, Tanzania, Rwanda, Cameroon, Senegal
+
+## Competitive Positioning
+
+### vs Google Drive
+VaultaCloud works offline; Google Drive requires internet. VaultaCloud is self-hosted; Google Drive stores data on Google's servers. VaultaCloud is one-time purchase; Google Drive charges monthly per user.
+
+### vs Dropbox
+Dropbox charges monthly per seat in USD. VaultaCloud is one-time. Dropbox is cloud-only; VaultaCloud works on LAN without internet.
+
+### vs Nextcloud
+Both are self-hosted. Nextcloud is feature-heavy and complex to configure. VaultaCloud is purpose-built for African SMEs with a simpler setup and offline-first architecture optimized for unreliable connectivity.
+
+### vs Microsoft OneDrive
+OneDrive is Microsoft-hosted with a Microsoft 365 subscription. VaultaCloud is private, self-hosted, and one-time purchase.
+
+## Company Facts
+
+- **Company name**: VaultaCloud
+- **Former name**: Flipside (rebranded to VaultaCloud)
+- **Founded**: 2024
+- **Headquarters**: Abuja, Federal Capital Territory, Nigeria
+- **Founder**: Nimbe Oduware
+- **Website**: https://vaultacloud.com
+- **Contact**: hello@vaultacloud.com
+- **GitHub**: https://github.com/vaultacloud
+- **Twitter**: https://twitter.com/vaultacloud
+- **LinkedIn**: https://linkedin.com/company/vaultacloud
+
+## Technology
+
+- **Frontend**: React, TypeScript
+- **Backend**: Node.js, TypeScript
+- **Architecture**: Offline-first with background sync
+- **Deployment**: Docker, Linux, cloud VPS
+- **API**: REST API with webhooks
+- **Email**: SMTP-compatible (Resend)
+
+## Reseller Program
+
+VaultaCloud supports white-label deployment. IT consultants and MSPs in Africa can deploy VaultaCloud for their clients under their own brand and custom domain, with volume reseller pricing.
+
+---
+Last updated: 2024
+Source: https://vaultacloud.com/llms-full.txt
