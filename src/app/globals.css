@@ -3,14 +3,20 @@
 @tailwind utilities;
 
 :root {
+  --navy-950: #05080F;
   --navy-900: #090F1E;
   --navy-800: #0F1F3D;
   --navy-700: #162D57;
   --navy-600: #1E3A6E;
+  --navy-100: #E0E7FF;
+  --navy-50: #EEF2FF;
+  --gold-600: #D97706;
   --gold-500: #F59E0B;
   --gold-400: #FBBF24;
+  --gold-300: #FDE68A;
+  --sky-600: #0284C7;
   --sky-500: #0EA5E9;
-  --white: #FFFFFF;
+  --sky-400: #38BDF8;
 }
 
 @layer base {
@@ -37,49 +43,174 @@
 
 @layer components {
   .btn-primary {
-    @apply inline-flex items-center gap-2 bg-gold-500 hover:bg-gold-600 text-navy-900 font-semibold px-6 py-3 rounded-lg transition-all duration-200 hover:shadow-lg hover:-translate-y-0.5;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background-color: #F59E0B;
+    color: #090F1E;
+    font-weight: 600;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.5rem;
+    transition: all 0.2s;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  .btn-primary:hover {
+    background-color: #D97706;
+    box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1);
+    transform: translateY(-2px);
   }
 
   .btn-secondary {
-    @apply inline-flex items-center gap-2 bg-transparent border-2 border-white/30 hover:border-white/60 text-white font-semibold px-6 py-3 rounded-lg transition-all duration-200;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: transparent;
+    border: 2px solid rgba(255,255,255,0.3);
+    color: white;
+    font-weight: 600;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.5rem;
+    transition: all 0.2s;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  .btn-secondary:hover {
+    border-color: rgba(255,255,255,0.6);
   }
 
   .btn-outline {
-    @apply inline-flex items-center gap-2 bg-transparent border-2 border-navy-700 hover:border-navy-900 text-navy-800 font-semibold px-6 py-3 rounded-lg transition-all duration-200;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: transparent;
+    border: 2px solid #162D57;
+    color: #0F1F3D;
+    font-weight: 600;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.5rem;
+    transition: all 0.2s;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  .btn-outline:hover {
+    border-color: #090F1E;
   }
 
   .section-label {
-    @apply inline-block text-gold-500 font-mono text-xs font-semibold tracking-widest uppercase mb-3;
+    display: inline-block;
+    color: #F59E0B;
+    font-family: var(--font-mono), monospace;
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin-bottom: 0.75rem;
   }
 
   .section-title {
-    @apply font-display text-3xl md:text-4xl lg:text-5xl font-bold text-navy-900 leading-tight;
+    font-family: var(--font-display), Georgia, serif;
+    font-size: clamp(1.875rem, 4vw, 3rem);
+    font-weight: 700;
+    color: #090F1E;
+    line-height: 1.2;
   }
 
   .section-subtitle {
-    @apply text-lg text-navy-600/70 leading-relaxed max-w-2xl;
+    font-size: 1.125rem;
+    color: rgba(30,58,110,0.7);
+    line-height: 1.7;
+    max-width: 42rem;
   }
 
   .card {
-    @apply bg-white border border-navy-100 rounded-2xl p-6 hover:shadow-lg hover:border-navy-200 transition-all duration-200;
+    background: white;
+    border: 1px solid #e2e8f0;
+    border-radius: 1rem;
+    padding: 1.5rem;
+    transition: all 0.2s;
+  }
+  .card:hover {
+    box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1);
+    border-color: #cbd5e1;
   }
 
   .card-dark {
-    @apply bg-navy-800/60 border border-white/10 rounded-2xl p-6 backdrop-blur-sm;
+    background: rgba(15,31,61,0.6);
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 1rem;
+    padding: 1.5rem;
+    backdrop-filter: blur(8px);
   }
 
   .nav-link {
-    @apply text-navy-700 hover:text-navy-900 font-medium transition-colors duration-150;
+    color: #162D57;
+    font-weight: 500;
+    transition: color 0.15s;
+    text-decoration: none;
+  }
+  .nav-link:hover {
+    color: #090F1E;
   }
 
   .prose-vc {
-    @apply prose prose-lg max-w-none
-      prose-headings:font-display prose-headings:text-navy-900
-      prose-p:text-navy-700 prose-p:leading-relaxed
-      prose-a:text-sky-600 prose-a:no-underline hover:prose-a:underline
-      prose-strong:text-navy-900
-      prose-code:text-navy-700 prose-code:bg-navy-50 prose-code:px-1 prose-code:rounded
-      prose-pre:bg-navy-900 prose-pre:text-green-400;
+    max-width: none;
+  }
+  .prose-vc h1, .prose-vc h2, .prose-vc h3 {
+    font-family: var(--font-display), Georgia, serif;
+    color: #090F1E;
+  }
+  .prose-vc p {
+    color: #162D57;
+    line-height: 1.75;
+  }
+  .prose-vc a {
+    color: #0284C7;
+    text-decoration: none;
+  }
+  .prose-vc a:hover {
+    text-decoration: underline;
+  }
+  .prose-vc strong {
+    color: #090F1E;
+  }
+  .prose-vc code {
+    color: #162D57;
+    background: #EEF2FF;
+    padding: 0.1rem 0.3rem;
+    border-radius: 0.25rem;
+    font-size: 0.875em;
+  }
+  .prose-vc pre {
+    background: #090F1E;
+    color: #4ade80;
+    border-radius: 0.75rem;
+    padding: 1rem;
+    overflow-x: auto;
+  }
+  .prose-vc ul, .prose-vc ol {
+    color: #162D57;
+    padding-left: 1.5rem;
+  }
+  .prose-vc li {
+    margin-bottom: 0.5rem;
+    line-height: 1.75;
+  }
+  .prose-vc table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.9em;
+  }
+  .prose-vc th, .prose-vc td {
+    border: 1px solid #e2e8f0;
+    padding: 0.75rem 1rem;
+    text-align: left;
+  }
+  .prose-vc th {
+    background: #EEF2FF;
+    font-weight: 600;
+    color: #090F1E;
   }
 }
 
@@ -114,26 +245,7 @@
     background-size: 40px 40px;
   }
 
-  .shimmer {
-    position: relative;
-    overflow: hidden;
-  }
-
-  .shimmer::after {
-    content: '';
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(90deg, transparent 0%, rgba(255,255,255,0.1) 50%, transparent 100%);
-    animation: shimmer 2s infinite;
-  }
-
-  @keyframes shimmer {
-    0% { transform: translateX(-100%); }
-    100% { transform: translateX(100%); }
-  }
-
   @media (prefers-reduced-motion: reduce) {
-    .shimmer::after { display: none; }
     * { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
   }
 }
